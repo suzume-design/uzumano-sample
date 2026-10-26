@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+<title>うずまの ｜ 山梨 禅リトリート（サンプルページ）</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/design-system-91387c6c-e237-48f0-b97d-80b2dd26524c/tokens/fonts.css">
+<link rel="stylesheet" href="_ds/design-system-91387c6c-e237-48f0-b97d-80b2dd26524c/tokens/colors.css">
+<link rel="stylesheet" href="_ds/design-system-91387c6c-e237-48f0-b97d-80b2dd26524c/tokens/typography.css">
+<link rel="stylesheet" href="_ds/design-system-91387c6c-e237-48f0-b97d-80b2dd26524c/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/design-system-91387c6c-e237-48f0-b97d-80b2dd26524c/tokens/motion.css">
+<link rel="stylesheet" href="_ds/design-system-91387c6c-e237-48f0-b97d-80b2dd26524c/tokens/base.css">
+<link rel="stylesheet" href="_ds/design-system-91387c6c-e237-48f0-b97d-80b2dd26524c/styles.css">
+<script src="_ds/design-system-91387c6c-e237-48f0-b97d-80b2dd26524c/_ds_bundle.js"></script>
+<style>
+html,body{margin:0;padding:0;overflow-x:hidden}
+*{box-sizing:border-box}
+a{color:var(--ink)}
+a:hover{opacity:var(--hover-opacity)}
+</style>
+</helmet>
+
+<div style="width:100%;overflow-x:hidden;background:var(--ground)">
+
+<header style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 32px;padding:14px clamp(24px,5vw,72px);background:var(--ground);border-bottom:1px solid var(--line)">
+  <a href="#" style="display:flex;align-items:center;gap:14px;flex:0 0 auto">
+    <img src="assets/logo-uzumano.png" alt="" style="width:40px;height:40px;filter:invert(0.93)">
+    <span style="display:flex;flex-direction:column;gap:5px">
+      <span style="font-family:var(--font-jp);font-size:16px;letter-spacing:0.26em;line-height:1">うずまの</span>
+      <span style="font-family:var(--font-jp);font-size:11px;letter-spacing:0.18em;line-height:1;color:var(--muted)">お山のリトリート</span>
+    </span>
+  </a>
+  <nav style="display:flex;flex-wrap:wrap;align-items:center;gap:10px clamp(16px,2.2vw,30px)">
+    <a href="#about" style="font-family:var(--font-jp);font-size:15px;letter-spacing:0.08em;min-height:44px;display:inline-flex;align-items:center">うずまのとは</a>
+    <a href="#price" style="font-family:var(--font-jp);font-size:15px;letter-spacing:0.08em;min-height:44px;display:inline-flex;align-items:center">プラン・料金</a>
+    <a href="#schedule" style="font-family:var(--font-jp);font-size:15px;letter-spacing:0.08em;min-height:44px;display:inline-flex;align-items:center">一日の流れ</a>
+    <a href="#meals" style="font-family:var(--font-jp);font-size:15px;letter-spacing:0.08em;min-height:44px;display:inline-flex;align-items:center">食事</a>
+    <a href="#access" style="font-family:var(--font-jp);font-size:15px;letter-spacing:0.08em;min-height:44px;display:inline-flex;align-items:center">アクセス</a>
+    <a href="#reserve" style="font-family:var(--font-jp);font-size:15px;letter-spacing:0.08em;min-height:44px;display:inline-flex;align-items:center;color:var(--muted)">空き状況をきく</a>
+  </nav>
+</header>
+
+<div style="position:relative">
+  <section style="position:relative;width:100%;height:calc(100vh - 70px);min-height:520px;overflow:hidden;background:var(--ground)">
+    <img ref="{{ heroImgRef }}" src="assets/hero-morning.png" alt="道志村の山と朝の光" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:1;filter:blur(0px)">
+    <span ref="{{ heroVeilRef }}" style="position:absolute;inset:0;background:var(--overlay-photo);opacity:1"></span>
+    <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:26px">
+      <img ref="{{ heroLogoRef }}" src="assets/logo-uzumano.png" alt="お山のリトリート うずまの" style="width:clamp(170px,16vw,240px);height:auto;filter:invert(0)">
+      <span ref="{{ heroPlaceRef }}" style="font-family:var(--font-jp);font-size:13px;letter-spacing:0.3em;text-indent:0.3em;line-height:1;color:#FFFFFF;opacity:1">山梨県道志村</span>
+    </div>
+  </section>
+  <sc-if value="{{ showScrollCue }}" hint-placeholder-val="{{ true }}">
+    <span style="position:absolute;left:50%;bottom:0;width:1px;height:72px;background:#FFFFFF;opacity:0.7;z-index:2"></span>
+    <span style="position:absolute;left:50%;bottom:-56px;width:1px;height:56px;background:var(--ink);opacity:0.45;z-index:2"></span>
+  </sc-if>
+</div>
+
+<section id="concept" data-fade style="padding:clamp(65px,8vw,120px) clamp(24px,5vw,72px);background:var(--ground)">
+  <x-import component-from-global-scope="DesignSystem_91387c.SectionHeading" title="食べない時間が、からだを整える。" label="Concept" level="{{ 1 }}" hint-size="100%,90px"></x-import>
+  <p style="margin-top:36px;max-width:var(--measure-jp);font-family:var(--font-jp);font-size:16px;line-height:1.9;letter-spacing:0.03em;color:var(--ink);text-wrap:pretty">都心から約90分、山梨県道志村。<br>酵素玄米のおにぎりや手づくりの酵素ドリンクをいただきながら、胃腸を休める「半断食」のリトリートです。<br>ヨガ、瞑想、山歩きとともに、二泊三日から。</p>
+  <div style="display:flex;flex-wrap:wrap;gap:16px;margin-top:40px">
+    <x-import component-from-global-scope="DesignSystem_91387c.Button" href="#reserve" hint-size="auto,52px">空き状況をきいてみる</x-import>
+    <x-import component-from-global-scope="DesignSystem_91387c.Button" variant="outline" href="#price" hint-size="auto,52px">プランと料金を見る</x-import>
+  </div>
+  <a href="#fasting" style="display:flex;align-items:center;justify-content:space-between;gap:24px;width:100%;max-width:340px;margin-top:40px;min-height:44px;padding-bottom:14px;border-bottom:1px solid var(--line);font-family:var(--font-jp);font-size:15px;letter-spacing:0.08em">半断食とファスティングについて<span style="flex:0 0 auto;width:38px;height:38px;border:1px solid var(--line);border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-family:var(--font-latin);font-size:15px">→</span></a>
+</section>
+
+<section id="about" data-fade style="padding:clamp(65px,8vw,120px) 0;background:var(--surface)">
+  <div style="display:flex;flex-wrap:wrap;align-items:flex-start;gap:clamp(40px,5vw,80px)">
+    <div style="flex:1 1 360px;min-width:0;padding-left:clamp(24px,5vw,72px);padding-right:clamp(24px,2vw,24px)">
+      <figure style="margin:0 0 0 clamp(0px,4vw,56px);position:relative;width:var(--motif-l);max-width:100%;aspect-ratio:1/1">
+        <span style="position:absolute;inset:3.5%;border-radius:50%;overflow:hidden;display:block;background:var(--tint-warm)">
+          <img src="assets/about-hands.png" alt="庭の草花に手をのばす" style="width:100%;height:100%;object-fit:cover">
+        </span>
+        <img src="assets/circle-frame.png" alt="" style="position:absolute;inset:0;width:100%;height:100%">
+      </figure>
+      <div style="margin-top:44px">
+        <x-import component-from-global-scope="DesignSystem_91387c.SectionHeading" title="自らの健康は、自らでつくる。" label="About" hint-size="100%,86px"></x-import>
+      </div>
+      <p style="margin-top:32px;max-width:var(--measure-jp);font-family:var(--font-jp);font-size:16px;line-height:1.9;letter-spacing:0.03em;text-wrap:pretty">修行のような節制ではなく、楽しく続けられる食とからだの整え方をお伝えするための場所です。看護師・助産師・鍼灸師・医学気功整体師である代表 手島 紫がひとりでお迎えします。</p>
+      <p style="margin-top:24px;max-width:var(--measure-jp);font-family:var(--font-jp);font-size:16px;line-height:1.9;letter-spacing:0.03em;text-wrap:pretty">二十代で怪我と離婚を経験し、自分の体調を崩したことをきっかけに、心とからだと食事の関係を学び直してきました。</p>
+      <p style="margin-top:24px;max-width:var(--measure-jp);font-family:var(--font-jp);font-size:16px;line-height:1.9;letter-spacing:0.03em;text-wrap:pretty">基本的に女性専用。お子様連れのご家族、ご夫婦・カップルでのご利用も可能です。</p>
+      <a href="#about" style="display:flex;align-items:center;justify-content:space-between;gap:24px;width:100%;max-width:340px;margin-top:40px;min-height:44px;padding-bottom:14px;border-bottom:1px solid var(--line);font-family:var(--font-jp);font-size:15px;letter-spacing:0.08em">代表と施設について<span style="flex:0 0 auto;width:38px;height:38px;border:1px solid var(--line);border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-family:var(--font-latin);font-size:15px">→</span></a>
+    </div>
+    <div style="flex:1.35 1 420px;min-width:0;display:flex;flex-direction:column;gap:clamp(28px,3vw,48px)">
+      <figure style="margin:0">
+        <div style="position:relative;height:clamp(220px,32vw,440px);background:var(--tint-warm);overflow:hidden">
+          <img src="assets/about-room.png" alt="掘りごたつのある居間" style="width:100%;height:100%;object-fit:cover">
+        </div>
+        <figcaption style="margin-top:12px;padding-right:clamp(24px,5vw,72px);font-family:var(--font-jp);font-size:13px;line-height:1.8;letter-spacing:0.03em;color:var(--muted)">冬はここに集まって、みんなで食べます。</figcaption>
+      </figure>
+      <figure style="margin:0;width:min(62%,320px);align-self:flex-end;padding-right:clamp(24px,5vw,72px)">
+        <div style="position:relative;height:clamp(180px,20vw,260px);background:var(--tint-cool);overflow:hidden">
+          <img src="assets/about-portrait.avif" alt="摘んだ葉を手にする手島 紫" style="width:100%;height:100%;object-fit:cover;object-position:50% 30%">
+        </div>
+        <figcaption style="margin-top:12px;font-family:var(--font-jp);font-size:13px;line-height:1.8;letter-spacing:0.03em;color:var(--muted)">手島 紫。看護師、助産師、鍼灸師をしています。</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="activity" data-fade style="padding:clamp(65px,8vw,120px) 0;background:var(--ground)">
+  <div style="display:flex;flex-wrap:wrap;align-items:flex-start;gap:clamp(56px,8vw,140px)">
+
+    <div style="flex:1 1 320px;min-width:0;padding-left:clamp(24px,5vw,72px);display:flex;flex-direction:column">
+      <x-import component-from-global-scope="DesignSystem_91387c.SectionHeading" title="体験" label="Activity" hint-size="100%,86px"></x-import>
+      <figure style="margin:clamp(72px,13vw,240px) 0 0;max-width:360px">
+        <div style="height:clamp(320px,34vw,520px);background:var(--tint-cool);overflow:hidden">
+          <img src="assets/act-river.avif" alt="道志川の上流" style="width:100%;height:100%;object-fit:cover">
+        </div>
+        <figcaption style="margin-top:12px;font-family:var(--font-jp);font-size:13px;line-height:1.8;letter-spacing:0.03em;color:var(--muted)">水が冷たい日は、ここで引き返します。</figcaption>
+      </figure>
+      <div style="margin-top:clamp(72px,10vw,150px);max-width:360px;display:flex;flex-direction:column;gap:clamp(32px,3.5vw,48px)">
+        <div style="border-top:1px solid var(--line);padding-top:20px;display:flex;flex-direction:column;align-items:flex-start;gap:12px">
+          <h3 style="font-family:var(--font-jp);font-size:18px;line-height:1.9;letter-spacing:0.07em">断食食について</h3>
+          <p style="font-family:var(--font-jp);font-size:16px;line-height:1.9;letter-spacing:0.03em;color:var(--muted);text-wrap:pretty">半断食と酵素ドリンク断食、回復食の組み立て方。</p>
+          <a href="#fasting" style="display:flex;align-items:center;justify-content:space-between;gap:24px;width:100%;margin-top:4px;min-height:44px;padding-bottom:14px;border-bottom:1px solid var(--line);font-family:var(--font-jp);font-size:15px;letter-spacing:0.08em">詳しく見る<span style="flex:0 0 auto;width:38px;height:38px;border:1px solid var(--line);border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-family:var(--font-latin);font-size:15px">→</span></a>
+        </div>
+        <div style="border-top:1px solid var(--line);padding-top:20px;display:flex;flex-direction:column;align-items:flex-start;gap:12px">
+          <h3 style="font-family:var(--font-jp);font-size:18px;line-height:1.9;letter-spacing:0.07em">イベントについて</h3>
+          <p style="font-family:var(--font-jp);font-size:16px;line-height:1.9;letter-spacing:0.03em;color:var(--muted);text-wrap:pretty">酵素づくり、草木染め、苔玉づくり、トレッキング。</p>
+          <a href="#events" style="display:flex;align-items:center;justify-content:space-between;gap:24px;width:100%;margin-top:4px;min-height:44px;padding-bottom:14px;border-bottom:1px solid var(--line);font-family:var(--font-jp);font-size:15px;letter-spacing:0.08em">詳しく見る<span style="flex:0 0 auto;width:38px;height:38px;border:1px solid var(--line);border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-family:var(--font-latin);font-size:15px">→</span></a>
+        </div>
+      </div>
+    </div>
+
+    <div style="flex:1.6 1 480px;min-width:0;display:flex;flex-direction:column;gap:clamp(56px,7vw,110px)">
+      <figure style="margin:0">
+        <div style="height:clamp(260px,32vw,460px);background:var(--tint-warm);overflow:hidden">
+          <img src="assets/act-leaves.avif" alt="笊に広げて干す摏んだ葉" style="width:100%;height:100%;object-fit:cover">
+        </div>
+        <figcaption style="margin-top:12px;padding-right:clamp(24px,5vw,72px);font-family:var(--font-jp);font-size:13px;line-height:1.8;letter-spacing:0.03em;color:var(--muted)">裏の斜面で摘んだ葉を、縁側で干します。</figcaption>
+      </figure>
+
+      <div style="padding-right:clamp(24px,5vw,72px);display:flex;flex-direction:column;gap:clamp(36px,4vw,56px)">
+        <div style="max-width:var(--measure-jp)">
+          <p style="font-family:var(--font-jp);font-size:22px;line-height:1.9;letter-spacing:0.07em;text-wrap:pretty">空腹を感じにくい半断食を、<br>一日を通して、退屈せずに。</p>
+          <p style="margin-top:24px;font-family:var(--font-jp);font-size:16px;line-height:1.9;letter-spacing:0.03em;color:var(--muted);text-wrap:pretty">朝は人参とりんごのジュース、昼は酵素玄米のおにぎり、夕は温野菜と豆類。少量でも食べながら胃腸を休めるので、「意外とお腹いっぱいだった」という声が多く届きます。朝夕はヨガと気功、つぼ押しと瞑想。日中は道志村や山中湖を歩きます。帰ってからも続けられるよう、回復食のアドバイスや重ね煮レッスン、自分で押せるつぼをお渡しします。</p>
+        </div>
+
+        <figure style="margin:clamp(24px,3vw,48px) 0 0;width:min(100%,560px);align-self:flex-end">
+          <div style="height:clamp(280px,31vw,480px);background:var(--tint-cool);overflow:hidden">
+            <img src="assets/act-meal.avif" alt="黒い角皿に盛った半断食の夕食" style="width:100%;height:100%;object-fit:cover">
+          </div>
+          <figcaption style="margin-top:12px;font-family:var(--font-jp);font-size:13px;line-height:1.8;letter-spacing:0.03em;color:var(--muted)">少なめですが、品数は多めにしています。</figcaption>
+        </figure>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="price" data-fade style="padding:clamp(65px,8vw,120px) clamp(24px,5vw,72px);background:var(--surface)">
+  <x-import component-from-global-scope="DesignSystem_91387c.SectionHeading" title="三つの過ごし方" hint-size="100%,56px"></x-import>
+  <p style="margin-top:24px;max-width:var(--measure-jp);font-family:var(--font-jp);font-size:16px;line-height:1.9;letter-spacing:0.03em;text-wrap:pretty">いずれも一泊あたり二食付き、ヨガ・瞑想を含みます。二泊三日から承ります。</p>
+
+  <div style="margin-top:56px;border-top:1px solid var(--line)">
+    <div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:20px clamp(32px,5vw,80px);padding:32px 0;border-bottom:1px solid var(--line)">
+      <div style="flex:1 1 340px;min-width:0;max-width:var(--measure-jp)">
+        <h3 style="font-family:var(--font-jp);font-size:18px;line-height:1.9;letter-spacing:0.07em">ファスティングリトリート</h3>
+        <p style="margin-top:8px;font-family:var(--font-jp);font-size:16px;line-height:1.9;letter-spacing:0.03em;color:var(--muted);text-wrap:pretty">体に不調を感じている方、一度胃腸をリセットしたい方へ。半断食と酵素ドリンク断食の二種類があります。</p>
+      </div>
+      <div style="flex:0 1 280px;display:flex;flex-direction:column;gap:12px">
+        <span style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap"><span style="font-family:var(--font-jp);font-size:13px;letter-spacing:0.06em;color:var(--muted)">2名以上・1名あたり</span><span style="font-family:var(--font-latin);font-size:24px;letter-spacing:0.06em;white-space:nowrap">14,300<span style="font-family:var(--font-jp);font-size:15px;margin-left:0.35em">円</span></span></span>
+        <span style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap"><span style="font-family:var(--font-jp);font-size:13px;letter-spacing:0.06em;color:var(--muted)">個室・1名</span><span style="font-family:var(--font-latin);font-size:24px;letter-spacing:0.06em;white-space:nowrap">15,400<span style="font-family:var(--font-jp);font-size:15px;margin-left:0.35em">円</span></span></span>
+      </div>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:20px clamp(32px,5vw,80px);padding:32px 0;border-bottom:1px solid var(--line)">
+      <div style="flex:1 1 340px;min-width:0;max-width:var(--measure-jp)">
+        <h3 style="font-family:var(--font-jp);font-size:18px;line-height:1.9;letter-spacing:0.07em">養生リトリート</h3>
+        <p style="margin-top:8px;font-family:var(--font-jp);font-size:16px;line-height:1.9;letter-spacing:0.03em;color:var(--muted);text-wrap:pretty">疾患や食事制限のある方、断食には抵抗がある方へ。有機野菜の食事を自分で作り、いただく体験型のプログラムです。</p>
+      </div>
+      <div style="flex:0 1 280px;display:flex;flex-direction:column;gap:12px">
+        <span style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap"><span style="font-family:var(--font-jp);font-size:13px;letter-spacing:0.06em;color:var(--muted)">2名以上・1名あたり</span><span style="font-family:var(--font-latin);font-size:24px;letter-spacing:0.06em;white-space:nowrap">15,400<span style="font-family:var(--font-jp);font-size:15px;margin-left:0.35em">円</span></span></span>
+        <span style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap"><span style="font-family:var(--font-jp);font-size:13px;letter-spacing:0.06em;color:var(--muted)">個室・1名</span><span style="font-family:var(--font-latin);font-size:24px;letter-spacing:0.06em;white-space:nowrap">16,500<span style="font-family:var(--font-jp);font-size:15px;margin-left:0.35em">円</span></span></span>
+      </div>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:20px clamp(32px,5vw,80px);padding:32px 0;border-bottom:1px solid var(--line)">
+      <div style="flex:1 1 340px;min-width:0;max-width:var(--measure-jp)">
+        <h3 style="font-family:var(--font-jp);font-size:18px;line-height:1.9;letter-spacing:0.07em">ママ＆ベビーリトリート</h3>
+        <p style="margin-top:8px;font-family:var(--font-jp);font-size:16px;line-height:1.9;letter-spacing:0.03em;color:var(--muted);text-wrap:pretty">産後に最適な食事とからだのケアを学ぶプログラム。授乳・育児相談、ベビー沐浴、入浴時の保育などもご用意しています。</p>
+      </div>
+      <div style="flex:0 1 280px;display:flex;flex-direction:column;gap:12px">
+        <span style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap"><span style="font-family:var(--font-jp);font-size:13px;letter-spacing:0.06em;color:var(--muted)">大人2名・1名あたり</span><span style="font-family:var(--font-latin);font-size:24px;letter-spacing:0.06em;white-space:nowrap">14,300<span style="font-family:var(--font-jp);font-size:15px;margin-left:0.35em">円</span></span></span>
+        <span style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap"><span style="font-family:var(--font-jp);font-size:13px;letter-spacing:0.06em;color:var(--muted)">大人1名</span><span style="font-family:var(--font-latin);font-size:24px;letter-spacing:0.06em;white-space:nowrap">16,500<span style="font-family:var(--font-jp);font-size:15px;margin-left:0.35em">円</span></span></span>
+      </div>
+    </div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:clamp(28px,3.5vw,56px);margin-top:56px">
+    <div>
+      <h4 style="font-family:var(--font-jp);font-size:16px;letter-spacing:0.07em;line-height:1.9">ご宿泊について</h4>
+      <p style="margin-top:8px;font-family:var(--font-jp);font-size:16px;line-height:1.9;letter-spacing:0.03em;color:var(--muted);text-wrap:pretty">二泊三日から（初めての方は二泊から）。三泊以上は二名様から。効果的にデトックスされたい方には三泊以上をおすすめします。</p>
+    </div>
+    <div>
+      <h4 style="font-family:var(--font-jp);font-size:16px;letter-spacing:0.07em;line-height:1.9">割引</h4>
+      <p style="margin-top:8px;font-family:var(--font-jp);font-size:16px;line-height:1.9;letter-spacing:0.03em;color:var(--muted);text-wrap:pretty">連泊割：三泊目以降は1,000円引き。リピーター割：一年以内のご利用で、二回目以降の宿泊につき1,000円引き（二泊以上）。</p>
+    </div>
+    <div>
+      <h4 style="font-family:var(--font-jp);font-size:16px;letter-spacing:0.07em;line-height:1.9">主なオプション</h4>
+      <p style="margin-top:8px;font-family:var(--font-jp);font-size:16px;line-height:1.9;letter-spacing:0.03em;color:var(--muted);text-wrap:pretty">トレッキング 大人1,000円〜／子ども600円〜。忍者トレッキング 大人2,500円／子ども1,500円。鍼灸・整体・よもぎ蒸しは別途。</p>
+    </div>
+  </div>
+
+  <div style="margin-top:44px;display:flex;flex-direction:column;gap:10px">
+    <x-import component-from-global-scope="DesignSystem_91387c.Note" hint-size="100%,48px">※ すべて税込。年末年始（12月28日〜1月4日）・ゴールデンウィーク・お盆などの長期連休期間は通常の10％増となります。</x-import>
+    <x-import component-from-global-scope="DesignSystem_91387c.Note" hint-size="100%,32px">※ ママ＆ベビーリトリートのお子様料金は3,850円〜8,800円（年齢により異なります）。</x-import>
+  </div>
+  <a href="#price" style="display:flex;align-items:center;justify-content:space-between;gap:24px;width:100%;max-width:340px;margin-top:40px;min-height:44px;padding-bottom:14px;border-bottom:1px solid var(--line);font-family:var(--font-jp);font-size:15px;letter-spacing:0.08em">料金の詳細とオプション一覧<span style="flex:0 0 auto;width:38px;height:38px;border:1px solid var(--line);border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-family:var(--font-latin);font-size:15px">→</span></a>
+
+  <a href="https://manomaternity.com/" target="_blank" rel="noopener" style="position:relative;display:block;margin-top:clamp(48px,6vw,80px);overflow:hidden;background:var(--ground);border:1px solid var(--line)">
+    <img src="assets/banner-acupuncture.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:18% 62%">
+    <span style="position:absolute;right:0;top:0;bottom:0;width:min(100%,max(380px,70%));background:rgba(247,245,240,0.9);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);-webkit-mask-image:linear-gradient(to left,#000 0%,#000 76%,rgba(0,0,0,0) 100%);mask-image:linear-gradient(to left,#000 0%,#000 76%,rgba(0,0,0,0) 100%)"></span>
+    <span style="position:relative;margin-left:auto;display:flex;flex-direction:column;justify-content:center;gap:12px;min-height:clamp(220px,17vw,280px);width:min(100%,max(300px,50%));padding:clamp(28px,3vw,40px) clamp(24px,2.6vw,36px)">
+      <span style="font-family:var(--font-jp);font-size:18px;letter-spacing:0.1em;line-height:1.9;color:var(--ink)">マノマタニティ鍼灸院</span>
+      <span style="font-family:var(--font-jp);font-size:16px;line-height:1.9;letter-spacing:0.03em;color:var(--ink);text-wrap:pretty">妊活・マタニティ・産後のための鍼灸院です。うずまのと同じ手島 紫が施術しています。</span>
+      <span style="display:flex;align-items:center;justify-content:space-between;gap:24px;width:100%;max-width:300px;margin-top:16px;min-height:44px;padding-bottom:14px;border-bottom:1px solid var(--line);font-family:var(--font-jp);font-size:15px;letter-spacing:0.08em;color:var(--ink)">鍼灸院のサイトへ<span style="flex:0 0 auto;width:38px;height:38px;border:1px solid var(--line);border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-family:var(--font-latin);font-size:15px">→</span></span>
+    </span>
+  </a>
+</section>
+
+<section id="schedule" data-fade style="padding:clamp(65px,8vw,120px) clamp(24px,5vw,72px);background:var(--ground)">
+  <x-import component-from-global-scope="DesignSystem_91387c.SectionHeading" title="起きて、歩いて、休む。" hint-size="100%,56px"></x-import>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:clamp(32px,4vw,64px);margin-top:48px">
+    <div>
+      <h3 style="font-family:var(--font-jp);font-size:18px;letter-spacing:0.14em;line-height:1.9;padding-bottom:14px;border-bottom:1px solid var(--line)">朝</h3>
+      <div style="display:grid;grid-template-columns:62px 1fr;gap:12px 16px;margin-top:20px;font-size:16px;line-height:1.9;letter-spacing:0.03em">
+        <span style="font-family:var(--font-latin);color:var(--muted)">6:00</span><span style="font-family:var(--font-jp)">起床</span>
+        <span style="font-family:var(--font-latin);color:var(--muted)">6:20</span><span style="font-family:var(--font-jp)">つぼマッサージ・ヨガ・気功体操</span>
+        <span style="font-family:var(--font-latin);color:var(--muted)">8:00</span><span style="font-family:var(--font-jp)">瞑想</span>
+        <span style="font-family:var(--font-latin);color:var(--muted)">8:30</span><span style="font-family:var(--font-jp)">朝食</span>
+      </div>
+    </div>
+    <div>
+      <h3 style="font-family:var(--font-jp);font-size:18px;letter-spacing:0.14em;line-height:1.9;padding-bottom:14px;border-bottom:1px solid var(--line)">昼</h3>
+      <div style="display:grid;grid-template-columns:62px 1fr;gap:12px 16px;margin-top:20px;font-size:16px;line-height:1.9;letter-spacing:0.03em">
+        <span style="font-family:var(--font-latin);color:var(--muted)">10:30</span><span style="font-family:var(--font-jp)">トレッキング・アクティビティ</span>
+        <span style="font-family:var(--font-latin);color:var(--muted)">12:30</span><span style="font-family:var(--font-jp)">昼食</span>
+        <span style="font-family:var(--font-latin);color:var(--muted)">13:00</span><span style="font-family:var(--font-jp)">トレッキング・アクティビティ</span>
+        <span style="font-family:var(--font-latin);color:var(--muted)">14:30</span><span style="font-family:var(--font-jp)">帰舎</span>
+      </div>
+    </div>
+    <div>
+      <h3 style="font-family:var(--font-jp);font-size:18px;letter-spacing:0.14em;line-height:1.9;padding-bottom:14px;border-bottom:1px solid var(--line)">夜</h3>
+      <div style="display:grid;grid-template-columns:62px 1fr;gap:12px 16px;margin-top:20px;font-size:16px;line-height:1.9;letter-spacing:0.03em">
+        <span style="font-family:var(--font-latin);color:var(--muted)">15:00</span><span style="font-family:var(--font-jp)">つぼマッサージ・ヨガ・瞑想</span>
+        <span style="font-family:var(--font-latin);color:var(--muted)">17:00</span><span style="font-family:var(--font-jp)">温泉または入浴</span>
+        <span style="font-family:var(--font-latin);color:var(--muted)">19:30</span><span style="font-family:var(--font-jp)">夕食</span>
+        <span style="font-family:var(--font-latin);color:var(--muted)">22:00</span><span style="font-family:var(--font-jp)">就寝</span>
+      </div>
+    </div>
+  </div>
+  <div style="margin-top:44px;display:flex;flex-direction:column;gap:10px">
+    <x-import component-from-global-scope="DesignSystem_91387c.Note" hint-size="100%,32px">※ 人数や天候に応じて内容・時間が変わることがあります。</x-import>
+    <x-import component-from-global-scope="DesignSystem_91387c.Note" hint-size="100%,48px">チェックイン 14:00〜15:00頃（当日トレッキングや酵素づくりに参加される場合は11:30頃）／チェックアウト 9:30〜10:30</x-import>
+  </div>
+</section>
+
+<section id="meals" data-fade style="padding:clamp(65px,8vw,120px) clamp(24px,5vw,72px);background:var(--surface)">
+  <x-import component-from-global-scope="DesignSystem_91387c.SectionHeading" title="玄米菜食と、手づくりの酵素。" hint-size="100%,56px"></x-import>
+  <p style="margin-top:24px;max-width:var(--measure-jp);font-family:var(--font-jp);font-size:16px;line-height:1.9;letter-spacing:0.03em;text-wrap:pretty">肉・魚・卵は使いません。野菜と昆布のお出汁に、自然農法や有機栽培の野菜とプラントベースのたんぱく質を合わせます。</p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:clamp(32px,4vw,64px);margin-top:52px">
+    <div>
+      <h3 style="font-family:var(--font-jp);font-size:18px;letter-spacing:0.07em;line-height:1.9">発酵玄米</h3>
+      <p style="margin-top:10px;font-family:var(--font-jp);font-size:16px;line-height:1.9;letter-spacing:0.03em;color:var(--muted);text-wrap:pretty">無農薬の玄米に、小豆や黒豆、数種類の雑穀を加え、一日以上しっかり浸水させて炊き上げます。三〜四日寝かせた発酵玄米は、もちもちと味わい深く。</p>
+    </div>
+    <div>
+      <h3 style="font-family:var(--font-jp);font-size:18px;letter-spacing:0.07em;line-height:1.9">手づくり酵素</h3>
+      <p style="margin-top:10px;font-family:var(--font-jp);font-size:16px;line-height:1.9;letter-spacing:0.03em;color:var(--muted);text-wrap:pretty">市販の酵素は熱処理されているため、生きたまま届けるのが難しいもの。厳選した旬の無農薬の野菜・果物・穀物を、できるだけ多くの種類で。</p>
+    </div>
+    <div>
+      <h3 style="font-family:var(--font-jp);font-size:18px;letter-spacing:0.07em;line-height:1.9">半断食の一例</h3>
+      <p style="margin-top:10px;font-family:var(--font-jp);font-size:16px;line-height:1.9;letter-spacing:0.03em;color:var(--muted);text-wrap:pretty">朝：人参とりんごのジュース、または手づくり酵素ドリンク。昼：酵素玄米のおにぎりと一口おやつ。夕：温野菜またはサラダと豆類。</p>
+      <a href="#fasting" style="display:flex;align-items:center;justify-content:space-between;gap:24px;width:100%;margin-top:24px;min-height:44px;padding-bottom:14px;border-bottom:1px solid var(--line);font-family:var(--font-jp);font-size:15px;letter-spacing:0.08em">断食の仕組みと進め方<span style="flex:0 0 auto;width:38px;height:38px;border:1px solid var(--line);border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-family:var(--font-latin);font-size:15px">→</span></a>
+    </div>
+  </div>
+  <div style="display:flex;flex-wrap:wrap;align-items:center;gap:clamp(28px,4vw,72px);margin-top:clamp(44px,5vw,72px)">
+    <figure style="margin:0;flex:1.5 1 420px;min-width:0;overflow:hidden">
+      <div style="position:relative;padding:0 48px">
+        <div style="height:clamp(260px,30vw,440px);display:flex;align-items:center;justify-content:center;overflow:hidden">
+          <div ref="{{ slideFigureRef }}" style="{{ slidePhotoStyle }}">
+            <span role="img" aria-label="{{ slideAlt }}" style="display:block;width:100%;height:100%"></span>
+          </div>
+        </div>
+        <button type="button" onClick="{{ slidePrev }}" aria-label="前の写真" style="position:absolute;left:0;top:50%;transform:translateY(-50%);width:44px;height:44px;display:inline-flex;align-items:center;justify-content:center;background:none;border:none;border-radius:0;cursor:pointer;font-family:var(--font-latin);font-size:26px;color:var(--ink);padding:0" style-hover="{{ slideBtnHover }}">‹</button>
+        <button type="button" onClick="{{ slideNext }}" aria-label="次の写真" style="position:absolute;right:0;top:50%;transform:translateY(-50%);width:44px;height:44px;display:inline-flex;align-items:center;justify-content:center;background:none;border:none;border-radius:0;cursor:pointer;font-family:var(--font-latin);font-size:26px;color:var(--ink);padding:0" style-hover="{{ slideBtnHover }}">›</button>
+      </div>
+      <figcaption ref="{{ slideCaptionRef }}" style="{{ slideCaptionStyle }}">{{ slideCaption }}</figcaption>
+    </figure>
+    <div style="flex:1 1 280px;min-width:0;display:flex;flex-direction:column;gap:28px">
+      <div ref="{{ slideTextRef }}" style="{{ slideTextStyle }}">
+        <h3 style="font-family:var(--font-jp);font-size:18px;letter-spacing:0.07em;line-height:1.9">{{ slideTitle }}</h3>
+        <p style="margin-top:16px;font-family:var(--font-jp);font-size:16px;line-height:1.9;letter-spacing:0.03em;color:var(--muted);text-wrap:pretty">{{ slideBody }}</p>
+      </div>
+      <span style="font-family:var(--font-latin);font-size:13px;letter-spacing:0.14em;color:var(--muted)">{{ slideCounter }}</span>
+    </div>
+  </div>
+</section>
+
+<section id="request" data-fade style="position:relative;padding:clamp(65px,8vw,120px) clamp(24px,5vw,72px);background:var(--tint-warm);overflow:hidden">
+  <img src="assets/request-meal.avif" alt="" style="position:absolute;inset:-14px;width:calc(100% + 28px);height:calc(100% + 28px);object-fit:cover;filter:blur(5px)">
+  <div style="position:relative;width:min(100%,max(300px,52%))">
+  <figure style="margin:0;position:relative;width:var(--motif-m);max-width:100%;aspect-ratio:1/1">
+    <span style="position:absolute;inset:3.5%;border-radius:50%;overflow:hidden;display:block;background:var(--tint-warm)">
+      <span role="img" aria-label="施術をする手島 紫" style="display:block;width:100%;height:100%;background-image:url(assets/request-treatment.avif);background-size:138%;background-position:16% 10%"></span>
+    </span>
+    <img src="assets/circle-frame.png" alt="" style="position:absolute;inset:0;width:100%;height:100%">
+  </figure>
+  <div style="position:relative;margin-top:40px;padding:clamp(24px,2.6vw,40px);text-shadow:0 0 6px #FFFFFF,0 0 14px #FFFFFF,0 0 26px #FFFFFF,0 0 44px rgba(255,255,255,0.95)">
+  <span style="position:absolute;inset:-6%;background:#FFFFFF;opacity:0.82;-webkit-mask-image:radial-gradient(112% 112% at 40% 45%,#000 58%,rgba(0,0,0,0) 100%);mask-image:radial-gradient(112% 112% at 40% 45%,#000 58%,rgba(0,0,0,0) 100%)"></span>
+  <span style="position:relative;display:block">
+    <x-import component-from-global-scope="DesignSystem_91387c.SectionHeading" title="ここは、宿ではありません。" hint-size="100%,56px"></x-import>
+  <p style="margin-top:32px;max-width:var(--measure-jp);font-family:var(--font-jp);font-size:16px;line-height:1.9;letter-spacing:0.03em;color:var(--ink);text-wrap:pretty">うずまのは一般的な旅館ではなく、心身を整えたいという方のための小さな施設です。ふだんは私ひとりで切り盛りしているため、旅館のようなサービスはご用意できません。</p>
+  <p style="margin-top:24px;max-width:var(--measure-jp);font-family:var(--font-jp);font-size:16px;line-height:1.9;letter-spacing:0.03em;color:var(--ink);text-wrap:pretty">食事の準備やお片づけは、みなさんと一緒にお願いしています。部屋に何かを運ぶことも、好きな時間に食事を出すこともできません。</p>
+  <p style="margin-top:24px;max-width:var(--measure-jp);font-family:var(--font-jp);font-size:16px;line-height:1.9;letter-spacing:0.03em;color:var(--ink);text-wrap:pretty">そのかわり、台所に立ちながら話したり、山を歩きながら相談を受けたりする時間がたくさんあります。そういう場所だとご理解のうえ、お越しいただけたら嬉しいです。</p>
+  <div style="margin-top:48px">
+    <x-import component-from-global-scope="DesignSystem_91387c.Signature" role="お山のリトリート うずまの　手島 紫" width="{{ 210 }}" hint-size="210px,80px"></x-import>
+  </div>
+  </span>
+  </div>
+  </div>
+</section>
+
+<section id="journal" data-fade style="padding:clamp(65px,8vw,120px) clamp(24px,5vw,72px);background:var(--ground)">
+  <x-import component-from-global-scope="DesignSystem_91387c.SectionHeading" title="日々のこと" hint-size="100%,56px"></x-import>
+  <div style="margin-top:36px;border-top:1px solid var(--line)">
+    <x-import component-from-global-scope="DesignSystem_91387c.NewsList" items="{{ newsItems }}" hint-size="100%,320px"></x-import>
+  </div>
+  <a href="#journal" style="display:flex;align-items:center;justify-content:space-between;gap:24px;width:100%;max-width:340px;margin-top:40px;min-height:44px;padding-bottom:14px;border-bottom:1px solid var(--line);font-family:var(--font-jp);font-size:15px;letter-spacing:0.08em">ブログをもっと読む<span style="flex:0 0 auto;width:38px;height:38px;border:1px solid var(--line);border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-family:var(--font-latin);font-size:15px">→</span></a>
+</section>
+
+<section id="access" data-fade style="padding:clamp(65px,8vw,120px) clamp(24px,5vw,72px);background:var(--surface)">
+  <x-import component-from-global-scope="DesignSystem_91387c.SectionHeading" title="山梨県南都留郡道志村3964" label="Access" hint-size="100%,86px"></x-import>
+  <p style="margin-top:24px;max-width:var(--measure-jp);font-family:var(--font-jp);font-size:16px;line-height:1.9;letter-spacing:0.03em;text-wrap:pretty">北丹沢と道志山脈の谷あい、清流・道志川が流れる細長い村です。徒歩5分のところに源泉かけ流しの温泉があります。</p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:clamp(32px,4vw,64px);margin-top:52px">
+    <div style="border-top:1px solid var(--line);padding-top:20px">
+      <h3 style="font-family:var(--font-jp);font-size:16px;letter-spacing:0.1em;line-height:1.9">電車</h3>
+      <p style="margin-top:8px;font-family:var(--font-jp);font-size:16px;line-height:1.9;letter-spacing:0.03em;color:var(--muted);text-wrap:pretty">新宿駅 ↔ JR中央本線 藤野駅。駅から車で約45分。藤野駅まで無料で送迎いたします（要予約）。</p>
+    </div>
+    <div style="border-top:1px solid var(--line);padding-top:20px">
+      <h3 style="font-family:var(--font-jp);font-size:16px;letter-spacing:0.1em;line-height:1.9">高速バス</h3>
+      <p style="margin-top:8px;font-family:var(--font-jp);font-size:16px;line-height:1.9;letter-spacing:0.03em;color:var(--muted);text-wrap:pretty">バスタ新宿 ↔ 山中湖旭丘（バス停より車で約30分）、または中央道都留（約40分）。各バス停まで送迎いたします（要予約）。</p>
+    </div>
+    <div style="border-top:1px solid var(--line);padding-top:20px">
+      <h3 style="font-family:var(--font-jp);font-size:16px;letter-spacing:0.1em;line-height:1.9">お車</h3>
+      <p style="margin-top:8px;font-family:var(--font-jp);font-size:16px;line-height:1.9;letter-spacing:0.03em;color:var(--muted);text-wrap:pretty">中央自動車道 相模湖ICまたは相模原ICより約40〜50分。国道413号「紅椿の湯入口」の看板を左折。駐車場3台。</p>
+    </div>
+  </div>
+  <div style="margin-top:44px;position:relative;height:clamp(260px,26vw,380px);background:var(--tint-cool);border:1px solid var(--line);overflow:hidden">
+    <iframe title="お山のリトリート うずまの 周辺地図" src="https://www.google.com/maps?q=%E5%B1%B1%E6%A2%A8%E7%9C%8C%E5%8D%97%E9%83%BD%E7%95%99%E9%83%A1%E9%81%93%E5%BF%97%E6%9D%913964&amp;hl=ja&amp;z=14&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="width:100%;height:100%;border:0;display:block;filter:saturate(0.72)"></iframe>
+  </div>
+  <div style="margin-top:24px">
+    <x-import component-from-global-scope="DesignSystem_91387c.Note" hint-size="100%,48px">※ カーナビに住所を入れても正しく表示されないことがあります。Google マップで「お山のリトリート うずまの」と検索してください。</x-import>
+  </div>
+</section>
+
+<section id="reserve" data-fade style="padding:clamp(65px,8vw,120px) clamp(24px,5vw,72px);background:var(--ground)">
+  <x-import component-from-global-scope="DesignSystem_91387c.SectionHeading" title="まずは、お気軽にご相談ください。" hint-size="100%,56px"></x-import>
+  <p style="margin-top:28px;max-width:var(--measure-jp);font-family:var(--font-jp);font-size:16px;line-height:1.9;letter-spacing:0.03em;text-wrap:pretty">日程やお体の状態をうかがったうえで、無理のない過ごし方をご提案します。生理中のご利用や持病のある方も、ご遠慮なくお知らせください。お電話でもメールでも、私が直接お返事します。</p>
+  <div style="display:flex;flex-wrap:wrap;gap:16px clamp(40px,6vw,88px);margin-top:48px;padding-top:32px;border-top:1px solid var(--line)">
+    <a href="tel:08070215271" style="font-family:var(--font-latin);font-size:clamp(24px,2.4vw,30px);letter-spacing:0.08em;line-height:1.5;white-space:nowrap">080-7021-5271</a>
+    <a href="mailto:retreat@uzumano.com" style="font-family:var(--font-latin);font-size:clamp(20px,2.2vw,28px);letter-spacing:0.06em;line-height:1.5;word-break:break-all">retreat@uzumano.com</a>
+  </div>
+  <div style="margin-top:32px;display:flex;flex-direction:column;gap:10px">
+    <x-import component-from-global-scope="DesignSystem_91387c.Note" hint-size="100%,48px">在宅時は携帯電話が繋がりにくくなっております。繋がらない場合は、お手数ですがメールにてご連絡ください。</x-import>
+    <x-import component-from-global-scope="DesignSystem_91387c.Note" hint-size="100%,32px">お支払いはクレジットカード、PayPay、PayPal、メルペイがご利用いただけます。</x-import>
+  </div>
+  <div style="margin-top:40px">
+    <x-import component-from-global-scope="DesignSystem_91387c.Button" variant="outline" href="#reserve" hint-size="auto,52px">予約フォームへ</x-import>
+  </div>
+</section>
+
+<footer style="padding:clamp(56px,6vw,88px) clamp(24px,5vw,72px) 40px;background:var(--surface);border-top:1px solid var(--line)">
+  <div style="display:flex;flex-wrap:wrap;gap:clamp(40px,5vw,80px);justify-content:space-between">
+    <div style="flex:1 1 280px;min-width:0;display:flex;flex-direction:column;gap:18px;align-items:flex-start">
+      <img src="assets/logo-uzumano.png" alt="" style="width:62px;height:62px;filter:invert(0.93)">
+      <span style="font-family:var(--font-jp);font-size:15px;letter-spacing:0.16em;line-height:1.8">お山のリトリート うずまの</span>
+      <span style="font-family:var(--font-jp);font-size:13px;letter-spacing:0.04em;line-height:1.9;color:var(--muted)">〒402-0200　山梨県南都留郡道志村3964</span>
+      <div style="display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:8px">
+        <a href="#" style="font-family:var(--font-latin);font-size:12px;letter-spacing:0.16em;color:var(--muted)">INSTAGRAM</a>
+        <a href="#" style="font-family:var(--font-latin);font-size:12px;letter-spacing:0.16em;color:var(--muted)">FACEBOOK</a>
+        <a href="#" style="font-family:var(--font-latin);font-size:12px;letter-spacing:0.16em;color:var(--muted)">YOUTUBE</a>
+      </div>
+    </div>
+    <div style="flex:1.2 1 420px;min-width:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,140px),1fr));gap:24px 32px">
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <a href="#about" style="font-family:var(--font-jp);font-size:15px;letter-spacing:0.06em">うずまのとは</a>
+        <a href="#fasting" style="font-family:var(--font-jp);font-size:15px;letter-spacing:0.06em">断食について</a>
+        <a href="#journal" style="font-family:var(--font-jp);font-size:15px;letter-spacing:0.06em">お客様の声</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <a href="#price" style="font-family:var(--font-jp);font-size:15px;letter-spacing:0.06em">プラン・料金</a>
+        <a href="#schedule" style="font-family:var(--font-jp);font-size:15px;letter-spacing:0.06em">一日の流れ</a>
+        <a href="#meals" style="font-family:var(--font-jp);font-size:15px;letter-spacing:0.06em">食事</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <a href="#access" style="font-family:var(--font-jp);font-size:15px;letter-spacing:0.06em">アクセス</a>
+        <a href="#reserve" style="font-family:var(--font-jp);font-size:15px;letter-spacing:0.06em">持ち物</a>
+        <a href="#reserve" style="font-family:var(--font-jp);font-size:15px;letter-spacing:0.06em">よくある質問</a>
+        <a href="#reserve" style="font-family:var(--font-jp);font-size:15px;letter-spacing:0.06em">注意事項・キャンセル</a>
+      </div>
+    </div>
+  </div>
+  <p style="margin-top:clamp(40px,5vw,72px);padding-top:20px;border-top:1px solid var(--line);font-family:var(--font-jp);font-size:12px;letter-spacing:0.08em;color:var(--muted-light)">© お山のリトリート うずまの</p>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{
+  &quot;fadeOnScroll&quot;: { &quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;ふるまい&quot; },
+  &quot;showScrollCue&quot;: { &quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;ふるまい&quot; },
+  &quot;newsCount&quot;: { &quot;editor&quot;: &quot;int&quot;, &quot;default&quot;: 5, &quot;min&quot;: 3, &quot;max&quot;: 5, &quot;tsType&quot;: &quot;number&quot;, &quot;section&quot;: &quot;日々のこと&quot; }
+}">
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this._seen = new WeakSet();
+  }
+
+  componentDidMount() { this._fade(); this._autoplay(); this._heroIntro(); }
+
+  _heroIntro() {
+    if (this._heroPlayed) return;
+    const img = this._heroImgRef && this._heroImgRef.current;
+    const veil = this._heroVeilRef && this._heroVeilRef.current;
+    const logo = this._heroLogoRef && this._heroLogoRef.current;
+    const place = this._heroPlaceRef && this._heroPlaceRef.current;
+    if (!img || !img.animate) return;
+    this._heroPlayed = true;
+    const ease = 'cubic-bezier(0.22,0.61,0.36,1)';
+    img.animate({ opacity: [0, 1], filter: ['blur(22px)', 'blur(0px)'] }, { duration: 1700, delay: 350, easing: ease, fill: 'both' });
+    img.animate({ transform: ['scale(1)', 'scale(1.07)'] }, { duration: 5000, easing: 'cubic-bezier(0.22,0.61,0.36,1)', fill: 'both' });
+    if (veil) veil.animate({ opacity: [0, 1] }, { duration: 1700, delay: 350, easing: ease, fill: 'both' });
+    if (logo) logo.animate({ filter: ['invert(0.93)', 'invert(0.93)', 'invert(0)'] }, { duration: 1900, delay: 150, easing: ease, fill: 'both' });
+    if (place) place.animate({ opacity: [0, 0, 1] }, { duration: 1900, delay: 150, easing: ease, fill: 'both' });
+  }
+  componentDidUpdate() { this._fade(); this._heroIntro(); }
+
+  _fade() {
+    if (this.props.fadeOnScroll === false) return;
+    if (typeof IntersectionObserver === 'undefined') return;
+    if (!this._io) {
+      this._io = new IntersectionObserver((entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.style.opacity = '1';
+            e.target.style.transform = 'none';
+            this._io.unobserve(e.target);
+          }
+        });
+      }, { rootMargin: '0px 0px -8% 0px' });
+    }
+    document.querySelectorAll('[data-fade]').forEach((el) => {
+      if (this._seen.has(el)) return;
+      this._seen.add(el);
+      el.style.opacity = '0';
+      el.style.transition = 'opacity 900ms cubic-bezier(0.22,0.61,0.36,1)';
+      this._io.observe(el);
+    });
+  }
+
+  componentWillUnmount() {
+    if (this._io) this._io.disconnect();
+    clearInterval(this._slideTimer);
+    clearTimeout(this._slideSafety);
+  }
+
+  _slides() {
+    return [
+      { src: 'assets/_leaves.png', alt: '摘んだ葉を両手に', caption: 'これは草木染めに使うほうの葉です。', title: '摘んだ葉', body: '裏の斜面で摘んだ葉を、お茶にしたり草木染めに使ったりします。歩きながら、その日に使う分だけ。', w: '100%', h: '100%' },
+      { src: 'assets/_stream.png', alt: '道志川の水が岩で巻いてできた渦', caption: 'うずまの、という名前のもとになった渦です。', title: '沢の渦', body: '歩いてすぐの道志川。水が岩のくぼみで巻いて、小さな渦をつくります。冬は縁が凍ります。', w: '86%', h: '82%' },
+      { src: 'assets/_zazen.png', alt: '縁側で瞑想するふたり', caption: '朝と夕、沢の音のほうを向いて座ります。', title: '朝夕の瞑想', body: '二十分ほど、なにもしません。眠ってしまっても構いません。慣れない方には呼吸の数え方からお伝えします。', w: '100%', h: '92%' },
+      { src: 'assets/_yoga.png', alt: 'ヨガマットに手をつく', caption: 'できる形で、できるところまで。', title: 'ヨガのじかん', body: 'からだの固い方でも大丈夫です。人数と体調を見ながら、その日の内容を決めています。', w: '74%', h: '100%' },
+      { src: 'assets/_engawa.png', alt: '縁側で作業する大人と子ども', caption: 'みんなで座って、豆を選っています。', title: '縁側のしごと', body: 'お子さん連れの方とは、縁側で豆を選ったり野菜を洗ったりします。手が空いたら、そのまま庭に出ます。', w: '64%', h: '100%' },
+      { src: 'assets/_guestroom.png', alt: '窓辺に座椅子と丸卓のある和室', caption: '窓の外は沢。昼間はここで本を読む方が多いです。', title: '客室紹介', body: '和室に座椅子と丸卓だけの部屋です。テレビはありません。布団はご自分で敷いていただき、朝は畳んでから下りてきてください。', w: '92%', h: '88%' },
+      { src: 'assets/_house.png', alt: '蝋梅ごしに見るうずまのの外観', caption: '冬の終わり。蝋梅が咲きはじめました。', title: 'うずまのの外', body: '小さな看板が目印の山里に佇む古民家。電車でお越しの方は、最寄り駅まで送迎いたします。', w: '100%', h: '96%' },
+    ];
+  }
+
+  _slideEls() {
+    return [this._figRef && this._figRef.current, this._txtRef && this._txtRef.current, this._capRef && this._capRef.current].filter(Boolean);
+  }
+
+  _photoEls() {
+    return [this._figRef && this._figRef.current, this._capRef && this._capRef.current].filter(Boolean);
+  }
+
+  _autoplay() {
+    clearInterval(this._slideTimer);
+    this._slideTimer = setInterval(() => this._go(1), 6000);
+  }
+
+  _play(phase) {
+    const opts = { duration: 340, easing: 'cubic-bezier(0.22,0.61,0.36,1)', fill: phase === 'out' ? 'forwards' : 'none' };
+    const dx = phase === 'out' ? ['translateX(0px)', 'translateX(-56px)'] : ['translateX(56px)', 'translateX(0px)'];
+    const op = phase === 'out' ? [1, 0] : [0, 1];
+    const bl = phase === 'out' ? ['blur(0px)', 'blur(10px)'] : ['blur(10px)', 'blur(0px)'];
+    const anims = [];
+    this._photoEls().forEach((el) => { if (el.animate) anims.push(el.animate({ transform: dx, opacity: op, filter: bl }, opts)); });
+    const txt = this._txtRef && this._txtRef.current;
+    if (txt && txt.animate) anims.push(txt.animate({ opacity: op, filter: bl }, opts));
+    this._anims = (this._anims || []).concat(anims);
+    return anims;
+  }
+
+  _clearAnims() {
+    (this._anims || []).forEach((a) => { try { a.cancel(); } catch (e) {} });
+    this._anims = [];
+  }
+
+  _go(step) {
+    if (this._busy) return;
+    this._busy = true;
+    this._autoplay();
+    clearTimeout(this._slideSafety);
+    this._clearAnims();
+    const n = this._slides().length;
+    const anims = this._play('out');
+    let swapped = false;
+    const swap = () => {
+      if (swapped) return;
+      swapped = true;
+      this.setState((s) => ({ slide: ((s.slide || 0) + step + n) % n }), () => {
+        this._clearAnims();
+        this._play('in');
+        this._busy = false;
+      });
+    };
+    if (anims.length) { anims[0].onfinish = swap; } 
+    if (anims.length && anims[0].finished && anims[0].finished.then) anims[0].finished.then(swap).catch(() => {});
+    setTimeout(swap, 700);
+    this._slideSafety = setTimeout(() => { this._clearAnims(); this._busy = false; }, 1200);
+  }
+
+  renderVals() {
+    const slides = this._slides();
+    const i = this.state.slide || 0;
+    const sl = slides[i];
+    if (!this._figRef) this._figRef = React.createRef();
+    if (!this._txtRef) this._txtRef = React.createRef();
+    if (!this._capRef) this._capRef = React.createRef();
+    if (!this._heroImgRef) this._heroImgRef = React.createRef();
+    if (!this._heroVeilRef) this._heroVeilRef = React.createRef();
+    if (!this._heroLogoRef) this._heroLogoRef = React.createRef();
+    if (!this._heroPlaceRef) this._heroPlaceRef = React.createRef();
+    const veil = { opacity: 1, filter: 'blur(0px)', transform: 'translateX(0px)' };
+    const news = [
+      { date: '2026.10.12', title: '今年の柿は豊作でした' },
+      { date: '2026.09.28', title: '秋の酵素づくり、はじめています' },
+      { date: '2026.09.05', title: 'ヤマメが上がってきました' },
+      { date: '2026.08.17', title: '夏の草木染めの会をひらきました' },
+      { date: '2026.07.30', title: '梅のシロップを仕込みました' },
+    ];
+    const n = this.props.newsCount ?? 5;
+    return {
+      newsItems: news.slice(0, n),
+      showScrollCue: this.props.showScrollCue ?? true,
+      motifOffset: { marginLeft: 'clamp(0px, 4vw, 56px)' },
+      slidePhotoStyle: { position: 'relative', width: sl.w, height: sl.h, backgroundColor: 'var(--tint-warm)', backgroundImage: 'url(' + sl.src + ')', backgroundSize: 'cover', backgroundPosition: '50% 50%', overflow: 'hidden', ...veil },
+      slideAlt: sl.alt,
+      slideCaptionStyle: { marginTop: '12px', padding: '0 48px', minHeight: '40px', fontFamily: 'var(--font-jp)', fontSize: 'var(--size-caption)', lineHeight: 1.8, letterSpacing: 'var(--ls-body)', color: 'var(--text-caption)', ...veil },
+      slideCaptionRef: this._capRef,
+      heroImgRef: this._heroImgRef,
+      heroVeilRef: this._heroVeilRef,
+      heroLogoRef: this._heroLogoRef,
+      heroPlaceRef: this._heroPlaceRef,
+      slidePhotoLabel: sl.label,
+      slideCaption: sl.caption,
+      slideTitle: sl.title,
+      slideBody: sl.body,
+      slideTextStyle: veil,
+      slideCounter: String(i + 1).padStart(2, '0') + ' / ' + String(slides.length).padStart(2, '0'),
+      slidePrev: () => this._go(-1),
+      slideNext: () => this._go(1),
+      slideBtnHover: { opacity: 0.62 },
+      slideFigureRef: this._figRef,
+      slideTextRef: this._txtRef,
+    };
+  }
+}
+</script>
+</body>
+</html>

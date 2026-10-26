@@ -1,0 +1,28 @@
+:root{
+  /* base palette */
+  --ground:#F7F5F0;
+  --surface:#FFFFFF;
+  --tint-warm:#EEEBE6;
+  --tint-cool:#EBEEED;
+  --ink:#121212;
+  --muted:#646464;
+  --muted-light:#909090;
+  --accent:#7A8A6E;
+  --line:#DCDAD5;
+
+  /* semantic aliases */
+  --bg-page:var(--ground);
+  --bg-alt:var(--surface);
+  --bg-block-warm:var(--tint-warm);
+  --bg-block-cool:var(--tint-cool);
+  --text-body:var(--ink);
+  --text-heading:var(--ink);
+  --text-label:var(--muted);
+  --text-caption:var(--muted);
+  --text-note:var(--muted-light);
+  --text-on-accent:var(--ink); /* never knock out to white on accent */
+  --border-hairline:var(--line);
+  --border-strong:var(--muted-light);
+  --cta-fill:var(--accent);
+  --overlay-photo:rgba(18,18,18,0.22); /* pale veil over full-bleed photography */
+}

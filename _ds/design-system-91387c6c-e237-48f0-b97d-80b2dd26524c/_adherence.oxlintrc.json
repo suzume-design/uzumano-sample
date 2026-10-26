@@ -1,0 +1,311 @@
+{
+  "plugins": [
+    "react",
+    "import"
+  ],
+  "rules": {
+    "react/forbid-elements": [
+      "warn",
+      {
+        "forbid": []
+      }
+    ],
+    "no-restricted-imports": [
+      "warn",
+      {
+        "patterns": [
+          {
+            "group": [
+              "components/brand/**",
+              "components/core/**",
+              "components/layout/**",
+              "ui_kits/website/**"
+            ],
+            "message": "Import design-system components from 'index.js', not component internals."
+          }
+        ]
+      }
+    ],
+    "no-restricted-syntax": [
+      "warn",
+      {
+        "selector": "Literal[value=/#[0-9a-fA-F]{3,8}\\b/]",
+        "message": "Raw hex color — use a design-system color token via var()."
+      },
+      {
+        "selector": "Literal[value=/\\b\\d+px\\b/]",
+        "message": "Raw px value — use a design-system spacing token via var()."
+      },
+      {
+        "selector": "Literal[value=/font-family\\s*:\\s*(?!['\\\"]?(?:Zen Old Mincho|EB Garamond))/i]",
+        "message": "Font not provided by the design system. Available: Zen Old Mincho, EB Garamond."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Button'] > JSXAttribute > JSXIdentifier[name!=/^(?:variant|as|href|disabled|onClick|children|style|key|ref|className|style|children)$/]",
+        "message": "<Button> doesn't accept that prop. Declared props: variant, as, href, disabled, onClick, children, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Button'] > JSXAttribute[name.name='variant'] > Literal[value!=/^(?:fill|outline)$/]",
+        "message": "<Button> variant must be one of 'fill' | 'outline'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Button'] > JSXAttribute[name.name='as'] > Literal[value!=/^(?:a|button)$/]",
+        "message": "<Button> as must be one of 'a' | 'button'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='CircleMotif'] > JSXAttribute > JSXIdentifier[name!=/^(?:src|alt|size|caption|sprout|style|key|ref|className|style|children)$/]",
+        "message": "<CircleMotif> doesn't accept that prop. Declared props: src, alt, size, caption, sprout, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='CircleMotif'] > JSXAttribute[name.name='size'] > Literal[value!=/^(?:s|m|l)$/]",
+        "message": "<CircleMotif> size must be one of 's' | 'm' | 'l'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='FullBleedHero'] > JSXAttribute > JSXIdentifier[name!=/^(?:src|alt|height|caption|children|markSize|style|key|ref|className|style|children)$/]",
+        "message": "<FullBleedHero> doesn't accept that prop. Declared props: src, alt, height, caption, children, markSize, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='LogoMark'] > JSXAttribute > JSXIdentifier[name!=/^(?:size|withWordmark|color|style|key|ref|className|style|children)$/]",
+        "message": "<LogoMark> doesn't accept that prop. Declared props: size, withWordmark, color, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='NewsItem'] > JSXAttribute > JSXIdentifier[name!=/^(?:id|date|title|href|key|ref|className|style|children)$/]",
+        "message": "<NewsItem> doesn't accept that prop. Declared props: id, date, title, href."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Note'] > JSXAttribute > JSXIdentifier[name!=/^(?:children|tint|rule|style|key|ref|className|style|children)$/]",
+        "message": "<Note> doesn't accept that prop. Declared props: children, tint, rule, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Note'] > JSXAttribute[name.name='tint'] > Literal[value!=/^(?:none|warm|cool)$/]",
+        "message": "<Note> tint must be one of 'none' | 'warm' | 'cool'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='PhotoCaption'] > JSXAttribute > JSXIdentifier[name!=/^(?:src|alt|caption|height|width|align|style|key|ref|className|style|children)$/]",
+        "message": "<PhotoCaption> doesn't accept that prop. Declared props: src, alt, caption, height, width, align, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='PhotoCaption'] > JSXAttribute[name.name='align'] > Literal[value!=/^(?:left|right)$/]",
+        "message": "<PhotoCaption> align must be one of 'left' | 'right'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='PriceRow'] > JSXAttribute > JSXIdentifier[name!=/^(?:name|latin|note|price|unit|style|key|ref|className|style|children)$/]",
+        "message": "<PriceRow> doesn't accept that prop. Declared props: name, latin, note, price, unit, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='SectionHeading'] > JSXAttribute > JSXIdentifier[name!=/^(?:title|label|level|align|style|key|ref|className|style|children)$/]",
+        "message": "<SectionHeading> doesn't accept that prop. Declared props: title, label, level, align, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='SectionHeading'] > JSXAttribute[name.name='align'] > Literal[value!=/^(?:left|center)$/]",
+        "message": "<SectionHeading> align must be one of 'left' | 'center'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Signature'] > JSXAttribute > JSXIdentifier[name!=/^(?:src|name|role|width|style|key|ref|className|style|children)$/]",
+        "message": "<Signature> doesn't accept that prop. Declared props: src, name, role, width, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='TextImageSplit'] > JSXAttribute > JSXIdentifier[name!=/^(?:src|alt|caption|imageSide|ratio|gap|imageHeight|children|style|key|ref|className|style|children)$/]",
+        "message": "<TextImageSplit> doesn't accept that prop. Declared props: src, alt, caption, imageSide, ratio, gap, imageHeight, children, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='TextImageSplit'] > JSXAttribute[name.name='imageSide'] > Literal[value!=/^(?:left|right)$/]",
+        "message": "<TextImageSplit> imageSide must be one of 'left' | 'right'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='VerticalLead'] > JSXAttribute > JSXIdentifier[name!=/^(?:children|height|align|style|key|ref|className|style|children)$/]",
+        "message": "<VerticalLead> doesn't accept that prop. Declared props: children, height, align, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='VerticalLead'] > JSXAttribute[name.name='align'] > Literal[value!=/^(?:right|left)$/]",
+        "message": "<VerticalLead> align must be one of 'right' | 'left'."
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/index.js"
+      ],
+      "rules": {
+        "no-restricted-imports": "off"
+      }
+    }
+  ],
+  "x-omelette": {
+    "components": {
+      "Button": {
+        "replaces": []
+      },
+      "CircleMotif": {
+        "replaces": []
+      },
+      "FullBleedHero": {
+        "replaces": []
+      },
+      "LogoMark": {
+        "replaces": []
+      },
+      "NewsItem": {
+        "replaces": []
+      },
+      "Note": {
+        "replaces": []
+      },
+      "PhotoCaption": {
+        "replaces": []
+      },
+      "PriceRow": {
+        "replaces": []
+      },
+      "SectionHeading": {
+        "replaces": []
+      },
+      "Signature": {
+        "replaces": []
+      },
+      "TextImageSplit": {
+        "replaces": []
+      },
+      "VerticalLead": {
+        "replaces": []
+      }
+    },
+    "tokens": [
+      "--accent",
+      "--bg-alt",
+      "--bg-block-cool",
+      "--bg-block-warm",
+      "--bg-page",
+      "--border-hairline",
+      "--border-strong",
+      "--cta-fill",
+      "--dur-base",
+      "--dur-fast",
+      "--dur-slow",
+      "--ease-quiet",
+      "--font-jp",
+      "--font-latin",
+      "--ground",
+      "--gutter",
+      "--gutter-mobile",
+      "--hairline",
+      "--hover-opacity",
+      "--ink",
+      "--lh-body",
+      "--lh-heading",
+      "--lh-tight",
+      "--line",
+      "--ls-body",
+      "--ls-heading",
+      "--ls-label",
+      "--measure-jp",
+      "--measure-latin",
+      "--motif-l",
+      "--motif-m",
+      "--motif-s",
+      "--muted",
+      "--muted-light",
+      "--overlay-photo",
+      "--radius-none",
+      "--section-pad-y",
+      "--section-pad-y-mobile",
+      "--size-body",
+      "--size-caption",
+      "--size-h1",
+      "--size-h2",
+      "--size-h3",
+      "--size-label",
+      "--size-small",
+      "--space-1",
+      "--space-2",
+      "--space-3",
+      "--space-4",
+      "--space-5",
+      "--space-6",
+      "--space-7",
+      "--space-8",
+      "--space-9",
+      "--surface",
+      "--text-body",
+      "--text-caption",
+      "--text-heading",
+      "--text-label",
+      "--text-note",
+      "--text-on-accent",
+      "--tint-cool",
+      "--tint-warm",
+      "--weight-regular"
+    ],
+    "tokenKinds": {
+      "--ground": "color",
+      "--surface": "color",
+      "--tint-warm": "color",
+      "--tint-cool": "color",
+      "--ink": "color",
+      "--muted": "color",
+      "--muted-light": "color",
+      "--accent": "color",
+      "--line": "color",
+      "--bg-page": "color",
+      "--bg-alt": "color",
+      "--bg-block-warm": "color",
+      "--bg-block-cool": "color",
+      "--text-body": "font",
+      "--text-heading": "font",
+      "--text-label": "font",
+      "--text-caption": "font",
+      "--text-note": "font",
+      "--text-on-accent": "font",
+      "--border-hairline": "color",
+      "--border-strong": "color",
+      "--cta-fill": "color",
+      "--overlay-photo": "color",
+      "--font-jp": "font",
+      "--font-latin": "font",
+      "--weight-regular": "font",
+      "--size-h1": "spacing",
+      "--size-h2": "spacing",
+      "--size-h3": "spacing",
+      "--size-body": "spacing",
+      "--size-small": "spacing",
+      "--size-caption": "spacing",
+      "--size-label": "spacing",
+      "--lh-heading": "other",
+      "--lh-body": "other",
+      "--lh-tight": "other",
+      "--ls-body": "spacing",
+      "--ls-heading": "spacing",
+      "--ls-label": "spacing",
+      "--measure-jp": "spacing",
+      "--measure-latin": "spacing",
+      "--space-1": "spacing",
+      "--space-2": "spacing",
+      "--space-3": "spacing",
+      "--space-4": "spacing",
+      "--space-5": "spacing",
+      "--space-6": "spacing",
+      "--space-7": "spacing",
+      "--space-8": "spacing",
+      "--space-9": "spacing",
+      "--section-pad-y": "spacing",
+      "--section-pad-y-mobile": "spacing",
+      "--gutter": "spacing",
+      "--gutter-mobile": "spacing",
+      "--motif-s": "spacing",
+      "--motif-m": "spacing",
+      "--motif-l": "spacing",
+      "--radius-none": "radius",
+      "--hairline": "spacing",
+      "--ease-quiet": "other",
+      "--dur-fast": "other",
+      "--dur-base": "other",
+      "--dur-slow": "other",
+      "--hover-opacity": "other"
+    },
+    "fontFamilies": [
+      "EB Garamond",
+      "Zen Old Mincho"
+    ]
+  }
+}

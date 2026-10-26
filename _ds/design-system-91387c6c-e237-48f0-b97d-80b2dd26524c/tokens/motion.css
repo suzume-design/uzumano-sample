@@ -1,0 +1,7 @@
+:root{
+  --ease-quiet:cubic-bezier(0.22,0.61,0.36,1); /* @kind other */
+  --dur-fast:200ms; /* @kind other */
+  --dur-base:420ms; /* @kind other */
+  --dur-slow:900ms; /* @kind other */
+  --hover-opacity:0.62; /* @kind other */
+}

@@ -1,0 +1,23 @@
+:root{
+  --space-1:4px;
+  --space-2:8px;
+  --space-3:12px;
+  --space-4:16px;
+  --space-5:24px;
+  --space-6:32px;
+  --space-7:48px;
+  --space-8:65px;
+  --space-9:96px;
+
+  --section-pad-y:8vw;        /* ≈114px at 1440 */
+  --section-pad-y-mobile:65px;
+  --gutter:5vw;
+  --gutter-mobile:24px;
+
+  --motif-s:96px;
+  --motif-m:168px;
+  --motif-l:260px;
+
+  --radius-none:0;            /* buttons, photos, blocks — everything is square */
+  --hairline:1px;
+}
